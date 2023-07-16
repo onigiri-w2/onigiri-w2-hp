@@ -10,7 +10,7 @@ export const Posts = () => {
         <Post
           title="例外処理 俺の指針"
           url="https://zenn.dev/articles/faf23d5236ee71/edit"
-          date="2022-07-16"
+          date="2023-07-16"
           description="「例外処理むっず...何を指針にして実装すりゃええねん...」ってなったので、調査して思考して記事書きました。"
         />
       </div>
