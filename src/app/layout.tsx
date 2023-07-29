@@ -21,6 +21,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>onigiri.w2</title>
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+      </head>
       <body
         className={`${inter.className} mx-auto flex min-h-screen max-w-3xl flex-col dark:bg-dark-800`}
         suppressHydrationWarning={true}
