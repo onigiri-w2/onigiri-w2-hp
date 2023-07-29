@@ -1,11 +1,16 @@
 import NextImage from "next/image";
 import React from "react";
+import { LiaHomeSolid } from "react-icons/lia";
 
 import TopPageSection from "@/components/elements/TopSection";
 
 const PrivateWorks = () => {
+  const icon = (
+    <LiaHomeSolid className="text-xlarge-size font-semibold text-base-color dark:text-white" />
+  );
+
   return (
-    <TopPageSection title="Private Work" iconPath="/images/home.png">
+    <TopPageSection title="Private Work" icon={icon}>
       <div className="mb-4">
         <Work
           title="バイク駐車場Map"
@@ -41,12 +46,10 @@ const Work = ({ title, description, iconPath, url = "#" }: WorkProps) => {
       <div className="flex flex-row items-start">
         <NextImage src={iconPath} alt="icon" width={80} height={80} />
         <div className="ml-2">
-          <h1 className="text-normal-size font-semibold text-primary-700">
+          <h1 className="text-normal-size font-semibold text-primary-700 dark:text-primary-300">
             {title}
           </h1>
-          <p className="mt-2 text-small-size text-base-color">
-            {formattedDescription}
-          </p>
+          <p className="mt-2 text-small-size">{formattedDescription}</p>
         </div>
       </div>
     </a>

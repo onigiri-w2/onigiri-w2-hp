@@ -6,6 +6,7 @@ type Props = {
   title: string;
   isBold?: boolean;
   color?: string;
+  darkmodeColor?: string;
   fontSize?: string;
   withIcon?: boolean;
   withUnderline?: boolean;
@@ -15,6 +16,7 @@ const ExternalTextLink = ({
   title,
   isBold = false,
   color = "text-primary-700",
+  darkmodeColor = "dark:text-primary-400",
   fontSize = "text-normal-size",
   withIcon = true,
   withUnderline = true,
@@ -24,7 +26,7 @@ const ExternalTextLink = ({
 
   return (
     <a
-      className={`flex items-center ${fontSize} ${underlineCss} ${boldCss} ${color}`}
+      className={`flex items-center ${fontSize} ${underlineCss} ${boldCss} ${color} ${darkmodeColor}`}
       href={url}
       target="_blank"
       rel="noopener noreferrer"

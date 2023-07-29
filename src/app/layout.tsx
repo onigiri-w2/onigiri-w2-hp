@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 
 import { Footer } from "@/components/elements/Footer";
 import { Header } from "@/components/elements/Header";
+import { AppProvider } from "@/providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,10 +21,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} flex min-h-screen flex-col`}>
-        <Header />
-        <main className="mx-auto max-w-3xl grow">{children}</main>
-        <Footer />
+      <body
+        className={`${inter.className} mx-auto flex min-h-screen max-w-3xl flex-col dark:bg-dark-800`}
+        suppressHydrationWarning={true}
+      >
+        <AppProvider>
+          <Header />
+          <main className="grow">{children}</main>
+          <Footer />
+        </AppProvider>
       </body>
     </html>
   );

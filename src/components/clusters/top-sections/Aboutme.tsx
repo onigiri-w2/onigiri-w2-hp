@@ -1,11 +1,15 @@
 import React from "react";
+import { BsPersonSquare } from "react-icons/bs";
 
 import TopPageSection from "@/components/elements/TopSection";
 
 export const Aboutme = () => {
+  const icon = (
+    <BsPersonSquare className="text-xlarge-size font-semibold text-base-color dark:text-white" />
+  );
   return (
-    <TopPageSection title="About Me" iconPath="/images/me.png">
-      <p className="leading-7 text-base-color">
+    <TopPageSection title="About Me" icon={icon}>
+      <p className="leading-7">
         東京のIT企業で働いてるどこにでもいそうな開発者。
         <br />
         仕事では主にAWS触ることが多いですが、逆にプライベートではフロント開発やモバイルアプリ開発をすることが多いです。

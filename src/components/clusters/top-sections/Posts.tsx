@@ -1,11 +1,15 @@
 import React from "react";
+import { CgNotes } from "react-icons/cg";
 
 import ExternalTextLink from "@/components/elements/ExternalTextLink";
 import TopPageSection from "@/components/elements/TopSection";
 
 export const Posts = () => {
+  const icon = (
+    <CgNotes className="text-xlarge-size font-semibold text-base-color dark:text-white" />
+  );
   return (
-    <TopPageSection title="Posts" iconPath="/images/posts.png">
+    <TopPageSection title="Posts" icon={icon}>
       <div className="mb-6">
         <Post
           title="例外処理 俺の指針"
@@ -38,12 +42,6 @@ export const Posts = () => {
         withUnderline={false}
       />
     </TopPageSection>
-    //   <Text mt={6} fontSize="sm" color="cyan.700">
-    //     <Link href="https://zenn.dev/onigiri_w2" isExternal>
-    //       &gt;&gt; もっと見る
-    //     </Link>
-    //   </Text>
-    // </Box>
   );
 };
 
@@ -58,7 +56,7 @@ const Post = ({ title, url, date, description }: PostProps) => {
     <div>
       <ExternalTextLink url={url} title={title} isBold />
       <p className="mb-1 text-small-size text-base-color-very-light">{date}</p>
-      <p className="text-small-size text-base-color">{description}</p>
+      <p className=" text-small-size">{description}</p>
     </div>
   );
 };
