@@ -5,6 +5,7 @@ import { LiaHomeSolid } from "react-icons/lia";
 import TopPageSection from "@/components/elements/TopSection";
 
 const PrivateWorks = () => {
+  // TODO: これは流石にリファクタリグしたい。普通にTopPageSectionにclassNameの内容を集約したい
   const icon = (
     <LiaHomeSolid className="text-xlarge-size font-semibold text-base-color dark:text-white" />
   );
