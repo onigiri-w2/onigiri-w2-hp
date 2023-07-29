@@ -14,6 +14,7 @@ export const Header = () => {
             alt="onigiri"
             width={36}
             height={36}
+            priority
           />
         </div>
         <span className="text-2xlarge-size font-semibold text-primary-800 dark:text-primary-400">
