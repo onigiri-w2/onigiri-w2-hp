@@ -47,7 +47,7 @@ const Work = ({ title, description, iconPath, url = "#" }: WorkProps) => {
       <div className="flex flex-row items-start">
         <NextImage src={iconPath} alt="icon" width={80} height={80} priority />
         <div className="ml-2">
-          <h1 className="text-normal-size font-semibold text-primary-700 dark:text-primary-300">
+          <h1 className="text-normal-size font-semibold text-primary-700 dark:text-primary-400">
             {title}
           </h1>
           <p className="mt-2 text-small-size">{formattedDescription}</p>
