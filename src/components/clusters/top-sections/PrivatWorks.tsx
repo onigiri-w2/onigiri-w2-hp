@@ -1,4 +1,5 @@
 import NextImage from "next/image";
+import Link from "next/link";
 import React from "react";
 import { LiaHomeSolid } from "react-icons/lia";
 
@@ -17,12 +18,14 @@ const PrivateWorks = () => {
           title="バイク駐車場Map"
           description="バイク駐車場の位置を地図で教えるモバイルアプリ。\nReactNative、python、AWS、mongodbなどを利用してる"
           iconPath="/images/bikeparking-map.png"
+          url="/bikeparking"
         />
       </div>
       <Work
         title="Wanna やりたいことリスト"
         description="やりたいことを1つ1つ自分のペースで実現していくためのアプリ。\nReactNativeのみで作ってる。"
         iconPath="/images/wanna.png"
+        url="/wannado"
       />
     </TopPageSection>
   );
@@ -43,7 +46,7 @@ const Work = ({ title, description, iconPath, url = "#" }: WorkProps) => {
   ));
 
   return (
-    <a href={url}>
+    <Link href={url}>
       <div className="flex flex-row items-start">
         <NextImage src={iconPath} alt="icon" width={80} height={80} priority />
         <div className="ml-2">
@@ -53,7 +56,7 @@ const Work = ({ title, description, iconPath, url = "#" }: WorkProps) => {
           <p className="mt-2 text-small-size">{formattedDescription}</p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 

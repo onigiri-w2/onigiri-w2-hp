@@ -4,7 +4,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import { Footer } from "@/components/elements/Footer";
-import { Header } from "@/components/elements/Header";
 import { AppProvider } from "@/providers";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -30,7 +29,6 @@ export default function RootLayout({
         suppressHydrationWarning={true}
       >
         <AppProvider>
-          <Header />
           <main className="grow">{children}</main>
           <Footer />
         </AppProvider>

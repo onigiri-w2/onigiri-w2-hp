@@ -1,32 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 body {
   background-color: #f3f3f3;
 }
 
-/** 一旦削除で **/
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/**
+  * Markdown
+  */
+.markdown {
+  @apply text-base-color leading-1.6 dark:text-gray-200;
+}
+.markdown h1 {
+  @apply text-2xlarge-size text-base-color dark:text-gray-200 font-bold my-8;
+}
+.markdown h2 {
+  @apply text-xlarge-size text-base-color dark:text-gray-200 font-bold my-6 border-l-8 border-base-color-light dark:border-gray-200
+    pl-4;
+}
+.markdown h3 {
+  @apply text-large-size text-base-color dark:text-gray-200 font-bold my-4;
+}
+.markdown h4 {
+  @apply text-base text-base-color dark:text-gray-200 font-bold my-2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.markdown ul {
+  @apply list-disc list-inside my-4;
+}
+.markdown ol {
+  @apply list-decimal my-4 list-inside;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
+.markdown a {
+  @apply text-blue-500 dark:text-blue-300 underline;
+}
