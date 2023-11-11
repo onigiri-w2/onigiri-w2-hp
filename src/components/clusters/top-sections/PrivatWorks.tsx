@@ -13,14 +13,14 @@ const PrivateWorks = () => {
 
   return (
     <TopPageSection title="Private Work" icon={icon}>
-      <div className="mb-4">
+      {/* <div className="mb-4">
         <Work
           title="ふつうの画像生成AI"
           description="試しに作ってみた、ただの画像生成AIアプリ。何の捻りもない。SDXL使ってる。"
           iconPath="/images/generativeAI.png"
           url="/generativeAI"
         />
-      </div>
+      </div> */}
       <div className="mb-4">
         <Work
           title="バイク駐車場Map"
