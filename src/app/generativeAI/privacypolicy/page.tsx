@@ -7,7 +7,7 @@ const privacyPolicyMdPath = path.join(
   "src",
   "data",
   "md",
-  "generativeAI",
+  "generativeAi",
   "privacy-policy.md"
 );
 

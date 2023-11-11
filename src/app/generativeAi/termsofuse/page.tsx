@@ -7,7 +7,7 @@ const termsOfUseMdPath = path.join(
   "src",
   "data",
   "md",
-  "generativeAI",
+  "generativeAi",
   "terms-of-use.md"
 );
 
