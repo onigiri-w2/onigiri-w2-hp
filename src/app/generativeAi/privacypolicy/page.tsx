@@ -7,7 +7,7 @@ const privacyPolicyMdPath = path.join(
   "src",
   "data",
   "md",
-  "bikeparking",
+  "generativeAI",
   "privacy-policy.md"
 );
 

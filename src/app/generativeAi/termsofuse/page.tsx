@@ -7,7 +7,7 @@ const termsOfUseMdPath = path.join(
   "src",
   "data",
   "md",
-  "bikeparking",
+  "generativeAI",
   "terms-of-use.md"
 );
 
