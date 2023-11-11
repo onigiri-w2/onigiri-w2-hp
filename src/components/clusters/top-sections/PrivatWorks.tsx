@@ -15,6 +15,14 @@ const PrivateWorks = () => {
     <TopPageSection title="Private Work" icon={icon}>
       <div className="mb-4">
         <Work
+          title="ふつうの画像生成AI"
+          description="試しに作ってみた、ただの画像生成AIアプリ。何の捻りもない。SDXL使ってる。"
+          iconPath="/images/generativeAI.png"
+          url="/generativeAI"
+        />
+      </div>
+      <div className="mb-4">
+        <Work
           title="バイク駐車場Map"
           description="バイク駐車場の位置を地図で教えるモバイルアプリ。\nReactNative、python、AWS、mongodbなどを利用してる"
           iconPath="/images/bikeparking-map.png"
