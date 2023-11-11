@@ -17,8 +17,8 @@ const PrivateWorks = () => {
         <Work
           title="ふつうの画像生成AI"
           description="試しに作ってみた、ただの画像生成AIアプリ。何の捻りもない。SDXL使ってる。"
-          iconPath="/images/generativeAi.png"
-          url="/generativeAi"
+          iconPath="/images/generativeAI.png"
+          url="/generativeAI"
         />
       </div>
       <div className="mb-4">

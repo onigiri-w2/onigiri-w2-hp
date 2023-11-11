@@ -8,16 +8,16 @@ export default function Home() {
     <>
       <Header
         title="ふつうの画像生成AI"
-        imgPath="/images/generativeAi.png"
-        linkPath="/generativeAi"
+        imgPath="/images/generativeAI.png"
+        linkPath="/generativeAI"
       />
       <div>
         <ul className="text-lg text-blue-500 underline dark:text-blue-200">
           <li className="py-1">
-            <Link href="/generativeAi/privacypolicy">プライバシーポリシー</Link>
+            <Link href="/generativeAI/privacypolicy">プライバシーポリシー</Link>
           </li>
           <li className="py-1">
-            <Link href="/generativeAi/termsofuse">利用規約</Link>
+            <Link href="/generativeAI/termsofuse">利用規約</Link>
           </li>
         </ul>
       </div>
