@@ -15,10 +15,10 @@ const PrivateWorks = () => {
     <TopPageSection title="Private Work" icon={icon}>
       <div className="mb-4">
         <Work
-          title="せつやく家計簿"
-          description="「絶対に節約したい」という思いで作ったアプリ。予算を元に日々の支出を管理する。\nReactNative。"
-          iconPath="/images/costShield.png"
-          url="/costShield"
+          title="ふつうの画像生成AI"
+          description="試しに作ってみた、ただの画像生成AIアプリ。何の捻りもない。SDXL使ってる。"
+          iconPath="/images/generativeAI.png"
+          url="/generativeAI"
         />
       </div>
       <div className="mb-4">
