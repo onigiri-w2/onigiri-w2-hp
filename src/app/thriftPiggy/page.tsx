@@ -8,16 +8,16 @@ export default function Home() {
     <>
       <Header
         title="せつやく家計簿"
-        imgPath="/images/generativeAI.png"
-        linkPath="/generativeAI"
+        imgPath="/images/thriftPiggy.png"
+        linkPath="/thriftPiggy"
       />
       <div>
         <ul className="text-lg text-blue-500 underline dark:text-blue-200">
           <li className="py-1">
-            <Link href="/generativeAI/privacypolicy">プライバシーポリシー</Link>
+            <Link href="/thriftPiggy/privacypolicy">プライバシーポリシー</Link>
           </li>
           <li className="py-1">
-            <Link href="/generativeAI/termsofuse">利用規約</Link>
+            <Link href="/thriftPiggy/termsofuse">利用規約</Link>
           </li>
         </ul>
       </div>

@@ -17,8 +17,8 @@ const PrivateWorks = () => {
         <Work
           title="せつやく家計簿"
           description="「絶対に節約したい」という思いで作ったアプリ。予算を元に日々の支出を管理する。\nReactNative。"
-          iconPath="/images/costShield.png"
-          url="/costShield"
+          iconPath="/images/thriftPiggy.png"
+          url="/thriftPiggy"
         />
       </div>
       <div className="mb-4">

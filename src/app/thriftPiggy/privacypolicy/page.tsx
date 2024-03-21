@@ -2,17 +2,17 @@ import fs from "fs";
 import path from "path";
 import ReactMarkdown from "react-markdown";
 
-const termsOfUseMdPath = path.join(
+const privacyPolicyMdPath = path.join(
   process.cwd(),
   "src",
   "data",
   "md",
-  "generativeAI",
-  "terms-of-use.md"
+  "thriftPiggy",
+  "privacy-policy.md"
 );
 
 async function getData() {
-  const fileContents = fs.readFileSync(termsOfUseMdPath, "utf8");
+  const fileContents = fs.readFileSync(privacyPolicyMdPath, "utf8");
   return fileContents;
 }
 export default async function Home() {
