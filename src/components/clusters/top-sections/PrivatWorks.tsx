@@ -29,11 +29,19 @@ const PrivateWorks = () => {
           url="/bikeparking"
         />
       </div>
+      <div className="mb-4">
+        <Work
+          title="Wanna やりたいことリスト"
+          description="やりたいことを1つ1つ自分のペースで実現していくためのアプリ。\nReactNativeのみで作ってる。"
+          iconPath="/images/wanna.png"
+          url="/wannado"
+        />
+      </div>
       <Work
-        title="Wanna やりたいことリスト"
-        description="やりたいことを1つ1つ自分のペースで実現していくためのアプリ。\nReactNativeのみで作ってる。"
-        iconPath="/images/wanna.png"
-        url="/wannado"
+        title="価格比較メモ"
+        description="スーパー間の価格を比較したいっていう要望があるような気がしたので、一旦サクッと作成"
+        iconPath="/images/pricememo.png"
+        url="/pricememo"
       />
     </TopPageSection>
   );
