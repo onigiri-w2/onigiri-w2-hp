@@ -23,14 +23,6 @@ const PrivateWorks = () => {
       </div>
       <div className="mb-4">
         <Work
-          title="バイク駐車場Map"
-          description="バイク駐車場の位置を地図で教えるモバイルアプリ。\nReactNative、python、AWS、mongodbなどを利用してる"
-          iconPath="/images/bikeparking-map.png"
-          url="/bikeparking"
-        />
-      </div>
-      <div className="mb-4">
-        <Work
           title="Wanna やりたいことリスト"
           description="やりたいことを1つ1つ自分のペースで実現していくためのアプリ。\nReactNativeのみで作ってる。"
           iconPath="/images/wanna.png"
